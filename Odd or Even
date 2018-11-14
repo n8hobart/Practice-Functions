@@ -1,0 +1,12 @@
+def oddEven ():
+	num = int(input ("Enter a number: \n"))
+	newNum = num % 2
+	divByFour = (num % 4)
+	if newNum == 1 & divByFour != 0:
+	    print ("This Number is Odd")
+	elif divByFour != 0 & newNum == 0:
+	    print ("This Number is even")
+	else:
+	    print ("Dividable by 4")
+
+oddEven()
