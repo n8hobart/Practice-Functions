@@ -1,5 +1,6 @@
 def oddEven ():
 	num = int(input ("Enter a number: \n"))
+	divBy = int(input ("Enter a number to divide by: \n"))
 	newNum = num % 2
 	divByFour = (num % 4)
 	if newNum == 1 & divByFour != 0:
@@ -7,6 +8,11 @@ def oddEven ():
 	elif divByFour != 0 & newNum == 0:
 	    print ("This Number is even")
 	else:
-	    print ("Dividable by 4")
+	    print ("Divisible by 4")
+	
+	if num % divBy == 0:
+		print ("\n", num, " is divisible by ", divBy)
+	else:
+		print ("\n", num, " is not divisible by ", divBy)
 
 oddEven()
